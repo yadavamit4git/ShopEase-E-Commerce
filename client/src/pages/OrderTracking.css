@@ -1,0 +1,162 @@
+
+.tracking-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 20px;
+}
+
+.tracking-container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.back-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tracking-header {
+    margin: 30px 0;
+}
+
+.tracking-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.tracking-header p {
+    color: #64748b;
+    word-break: break-all;
+}
+
+.tracking-status {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 16px;
+    border-radius: 20px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.tracking-timeline {
+    margin: 40px 0;
+}
+
+.tracking-step {
+    display: flex;
+    gap: 20px;
+    min-height: 100px;
+    position: relative;
+}
+
+.tracking-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 40px;
+    height: 60px;
+    width: 3px;
+    background: #e2e8f0;
+}
+
+.tracking-step.completed:not(:last-child)::after {
+    background: #16a34a;
+}
+
+.step-circle {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.tracking-step.completed .step-circle {
+    background: #16a34a;
+    color: white;
+}
+
+.step-info h3 {
+    margin: 5px 0;
+}
+
+.step-info p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.tracking-details {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 25px;
+}
+
+.tracking-product {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tracking-product h3 {
+    font-size: 16px;
+}
+
+.tracking-product p {
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.tracking-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.tracking-address {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.tracking-address p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.cancelled-message {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.tracking-message {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+@media (max-width: 600px) {
+    .tracking-container {
+        padding: 20px;
+    }
+
+    .tracking-header h1 {
+        font-size: 24px;
+    }
+}
